@@ -12,7 +12,7 @@ import random
 
 # -- Monthly
 COLOMBO_CITY_MIN = 172763
-COLOMBO_CITY_MIN = 206873
+COLOMBO_CITY_MAX = 206873
 
 GREATER_COLOMBO_MIN = 188116
 GREATER_COLOMBO_MAX = 136116
@@ -32,10 +32,12 @@ ANCIENT_CITIES_MAX = 164165
 NORTHERN_REGIONS_MIN =  1889
 NORTHERN_REGIONS_MAX =  2226
 
+
+
 # -- Monthly Predictions --
 
 def getColomboCityMonthlyPredictions():
-    return random.randint(COLOMBO_CITY_MIN,COLOMBO_CITY_MIN)
+    return random.randint(COLOMBO_CITY_MIN,COLOMBO_CITY_MAX)
 
 def getGreaterColomboMonthlyPredictions():
     return random.randint(GREATER_COLOMBO_MIN,GREATER_COLOMBO_MAX)
@@ -58,7 +60,7 @@ def getNorthernRegionsMonthlyPredictions():
 # -- Daily Predictions --
 
 def getColomboDailyPredictions():
-    return random.randint(int(COLOMBO_CITY_MIN/30),int(COLOMBO_CITY_MIN/30))
+    return random.randint(int(COLOMBO_CITY_MIN/30),int(COLOMBO_CITY_MAX/30))
 
 def getGreaterColomboDailyPredictions():
     return random.randint(int(GREATER_COLOMBO_MIN/30),int(GREATER_COLOMBO_MAX/30))
